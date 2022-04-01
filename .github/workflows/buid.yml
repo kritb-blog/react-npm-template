@@ -24,8 +24,11 @@ jobs:
             - run: yarn install --frozen-lockfile
             - name: check formatting
               run: yarn lint
+            - name: unit test
+              run: yarn test
             - name: build package
               run: yarn build
+
     semantic-release:
         runs-on: ubuntu-latest
         if: github.event_name == 'push' && ( github.ref == 'refs/heads/pre' || github.ref == 'refs/heads/main' )
