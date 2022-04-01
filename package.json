@@ -1,6 +1,6 @@
 {
     "name": "react-npm-template",
-    "version": "0.1.0",
+    "version": "0.0.0-development",
     "private": true,
     "dependencies": {
         "bfj": "^7.0.2",
@@ -46,7 +46,8 @@
         "build": "node scripts/build.js",
         "test": "node scripts/test.js",
         "prepare": "husky install",
-        "format": "prettier --write ."
+        "format": "prettier --write .",
+        "semantic-release": "semantic-release"
     },
     "eslintConfig": {
         "extends": [
@@ -150,5 +151,15 @@
     },
     "lint-staged": {
         "**/*": "prettier --write --ignore-unknown"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kritb-blog/react-npm-template.git"
+    },
+    "release": {
+        "branches": [
+            "master",
+            "next"
+        ]
     }
 }
