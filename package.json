@@ -172,8 +172,13 @@
     },
     "release": {
         "branches": [
-            "master",
-            "next"
+            {
+                "name": "main"
+            },
+            {
+                "name": "pre",
+                "prerelease": "beta"
+            }
         ]
     }
 }
