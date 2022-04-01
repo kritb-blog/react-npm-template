@@ -22,8 +22,6 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   registry-url: "https://registry.npmjs.org"
             - run: yarn install --frozen-lockfile
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
             - name: check formatting
               run: yarn lint
             - name: build package
@@ -43,13 +41,9 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   registry-url: https://npm.pkg.github.com/
             - run: yarn install --frozen-lockfile
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
             - name: build package
               run: yarn build
             - name: release
               run: yarn semantic-release
               env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
                   GH_TOKEN: ${{ secrets.GH_TOKEN }}
