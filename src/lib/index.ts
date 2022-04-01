@@ -1,3 +1,3 @@
-import IsometricGrid from "./IsometricGrid";
+import SampleComponent from "./SampleComponent";
 
-export { IsometricGrid };
+export { SampleComponent };
