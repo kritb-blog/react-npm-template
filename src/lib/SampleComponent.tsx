@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
+import React from "react";
 
-const SampleComponent: FunctionComponent = () => {
+const SampleComponent: React.FunctionComponent = () => {
     return <div>Sample SampleComponent</div>;
 };
 
