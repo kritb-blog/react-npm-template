@@ -1,5 +1,5 @@
 {
-    "name": "react-npm-template",
+    "name": "@kritb-blog/react-npm-template",
     "version": "0.0.0-development",
     "private": false,
     "main": "dist/index.js",
@@ -169,6 +169,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/kritb-blog/react-npm-template.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     },
     "release": {
         "branches": [
