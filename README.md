@@ -1,6 +1,7 @@
 # Getting Started with React NPM template
 
 A template to create Reactjs NPM package and publish to github packages.
+Thank you for good article from [JB](https://levelup.gitconnected.com/publish-react-components-as-an-npm-package-7a671a2fb7f)
 
 ## Available Scripts
 
